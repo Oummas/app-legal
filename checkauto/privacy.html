@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CheckAuto – Confidentialité</title><link rel="stylesheet" href="../style.css"></head>
+<body><main>
+<!-- Généré par CheckAuto/scripts/build-legal.mjs depuis CheckAuto/docs/legal/politique-de-confidentialite.md : ne pas modifier. -->
+<nav><a href="terms.html">Conditions d’utilisation</a> · <a href="support.html">Assistance</a></nav>
+<h1>Politique de confidentialité — CheckAuto</h1>
+<p><em>Dernière mise à jour : 27 octobre 2026</em></p>
+<h2>1. Qui est responsable de vos données ?</h2>
+<p>Le responsable du traitement est <strong>Hachim Remini</strong>, développeur indépendant, éditeur de l’application CheckAuto (ci-après « nous »).</p>
+<p>Contact pour toute question sur vos données : <strong><a href="mailto:hac.remini+CheckAuto@gmail.com">hac.remini+CheckAuto@gmail.com</a></strong>.</p>
+<h2>2. En bref</h2>
+<ul><li><strong>Aucun compte</strong> : nous ne vous demandons ni nom, ni e-mail, ni téléphone.</li><li><strong>Vos inspections restent sur votre téléphone</strong> : historique, photos, réponses et rapports sont enregistrés uniquement dans l’application, sur votre appareil.</li><li><strong>Les photos ne quittent votre téléphone que pour l’analyse</strong>, lorsque vous lancez celle-ci : elles sont envoyées à notre serveur, qui les transmet au fournisseur d’intelligence artificielle <strong>Anthropic</strong> pour en tirer des observations visuelles, puis renvoie le résultat. <strong>Notre serveur ne conserve ni les photos ni les informations du véhicule.</strong></li><li><strong>Les achats sont gérés par Apple</strong> : nous ne recevons ni vos coordonnées bancaires, ni votre identité.</li><li><strong>Pas de publicité, pas de pistage, pas d’outil de statistiques</strong> dans l’application.</li></ul>
+<h2>3. Quelles données, pourquoi, et où ?</h2>
+<h3>3.1 Données enregistrées sur votre appareil uniquement</h3>
+<div class="tbl"><table><tr><th>Données</th><th>Finalité</th></tr>
+<tr><td>Informations du véhicule saisies : marque, modèle, année, kilométrage, prix demandé</td><td>Inspection, résultat, rapport, historique</td></tr>
+<tr><td>Plaque d’immatriculation (facultative)</td><td>Affichage dans l’historique et le rapport</td></tr>
+<tr><td>Photos du véhicule (compressées), prises ou importées de la photothèque</td><td>Analyse, rapport PDF, historique</td></tr>
+<tr><td>Réponses à la checklist (oui / non / ne sait pas)</td><td>Score, rapport</td></tr>
+<tr><td>Résultat de l’analyse (score, défauts, coûts, arguments, offre suggérée)</td><td>Affichage, rapport, historique</td></tr>
+<tr><td>Inspection en cours (brouillon)</td><td>Reprendre une inspection interrompue</td></tr>
+<tr><td>Nombre d’inspections analysées, rapports achetés, identifiants de transaction</td><td>Inspection gratuite, accès aux rapports</td></tr></table></div>
+<p>Ces données sont stockées dans l’espace privé de l’application. Nous n’y avons pas accès. Elles sont supprimées lorsque vous supprimez une inspection depuis l’historique, lorsque vous utilisez « Effacer toutes mes données » dans Réglages et confidentialité, ou lorsque vous désinstallez l’application. Elles peuvent figurer dans les sauvegardes de votre appareil (iCloud ou ordinateur), selon vos réglages iOS : ces sauvegardes relèvent d’Apple et de vous.</p>
+<p><strong>La plaque d’immatriculation n’est jamais envoyée à notre serveur.</strong></p>
+<h3>3.2 Données envoyées pour l’analyse</h3>
+<p><strong>Votre accord est demandé avant le premier envoi</strong> : un écran explique quelles données sont envoyées, à qui et pourquoi, et rien n’est envoyé tant que vous n’avez pas appuyé sur « J’accepte et je lance l’analyse ». Vous pouvez retirer cet accord à tout moment dans Réglages et confidentialité ; il vous sera alors redemandé avant l’analyse suivante.</p>
+<p>Une fois votre accord donné, quand vous lancez l’analyse, l’application envoie à notre serveur, en connexion chiffrée (HTTPS) :</p>
+<ul><li>les photos que vous avez prises (12 au maximum, compressées) et l’étape correspondante (« avant », « pneu avant gauche »…) ;</li><li>les informations du véhicule : marque, modèle, année, kilométrage et prix demandé ;</li><li>vos réponses à la checklist.</li></ul>
+<p><strong>Ce que fait notre serveur</strong> : il vérifie la demande, transmet à Anthropic les photos, la marque, le modèle, l’année, le kilométrage et les réponses à la checklist (<strong>pas le prix demandé</strong>, qui sert uniquement au calcul de l’offre suggérée sur notre serveur), reçoit les observations, calcule le score et l’offre, et vous renvoie le résultat. Le traitement se fait en mémoire, le temps de la requête (2 minutes au plus) : <strong>aucune photo ni information du véhicule n’est enregistrée sur notre serveur, ni dans ses journaux.</strong></p>
+<p><strong>Où tourne notre serveur</strong> : sur la plateforme <strong>Cloudflare Workers</strong> de Cloudflare, Inc. (États-Unis), qui exécute la requête dans son centre de données le plus proche de vous et agit comme sous-traitant pour notre compte.</p>
+<p><strong>Ce que fait Anthropic</strong> : Anthropic, PBC (États-Unis) fournit le modèle d’intelligence artificielle « Claude » qui examine les photos. Anthropic agit comme sous-traitant pour notre compte, via son API professionnelle, dans le cadre de son avenant de traitement des données. Selon ses conditions commerciales, Anthropic n’utilise pas les données transmises par l’API pour entraîner ses modèles et ne les conserve que pour une durée limitée (30 jours au plus en règle générale), plus longtemps seulement si une requête est signalée pour non-respect de ses règles d’utilisation.</p>
+<p>Conseil : évitez de photographier des personnes, des documents ou des plaques d’autres véhicules. Les photos sont cadrées sur le véhicule inspecté ; si une personne y apparaît, elle sera transmise avec la photo.</p>
+<p><strong>Base légale</strong> : l’exécution du service que vous demandez (article 6.1.b du RGPD).</p>
+<h3>3.3 Données techniques</h3>
+<ul><li><strong>Adresse IP</strong> : elle est nécessairement vue par notre serveur lors de chaque requête. Elle est utilisée, <strong>en mémoire uniquement et pendant 10 minutes au plus</strong>, pour limiter le nombre d’analyses par connexion et prévenir les abus (compteur de notre serveur et limiteur de débit de Cloudflare). Elle n’est pas écrite dans nos journaux. Cloudflare traite aussi l’adresse IP pour acheminer la requête et protéger son réseau, selon sa politique de confidentialité.</li><li><strong>Journaux du serveur</strong> : pour chaque analyse, nous enregistrons uniquement des informations techniques sans donnée personnelle : code de réponse, mode d’analyse, nombre de photos, durée, code d’erreur, nombre de tentatives et, en cas d’erreur inattendue, le type d’erreur et sa pile d’appels (sans son message). Aucune image, aucune marque, aucun modèle, aucun prix, aucune adresse IP. Ces journaux sont conservés 7 jours au plus.</li></ul>
+<p><strong>Base légale</strong> : notre intérêt légitime à assurer la sécurité et le bon fonctionnement du service (article 6.1.f du RGPD).</p>
+<h3>3.4 Appareil photo et photothèque</h3>
+<p>L’application vous demande l’accès à l’appareil photo uniquement pour photographier le véhicule. Pour importer une photo, elle utilise le sélecteur de photos d’iOS : seule l’image que vous choisissez lui est transmise, sans accès au reste de votre photothèque. Elle n’accède ni au micro, ni à votre position, ni à vos contacts. Vous pouvez retirer l’autorisation de l’appareil photo à tout moment dans Réglages &gt; CheckAuto.</p>
+<h3>3.5 Partage du rapport</h3>
+<p>Le rapport PDF est créé sur votre appareil. Il n’est partagé que si vous le décidez, avec les destinataires et l’application que vous choisissez dans la feuille de partage d’iOS.</p>
+<h3>3.6 Achats intégrés</h3>
+<p>Le rapport à l’unité et l’abonnement CheckAuto Pro s’achètent par le système d’achats intégrés d’<strong>Apple</strong>, qui traite seul le paiement et votre compte Apple selon sa propre politique de confidentialité : nous ne recevons ni vos coordonnées bancaires, ni votre identité. L’application vérifie vos achats directement auprès de l’App Store, sur votre téléphone, et y enregistre la liste des rapports achetés et l’identifiant des transactions déjà prises en compte ; <strong>aucune de ces informations n’est envoyée à notre serveur</strong>. Apple nous fournit seulement des rapports de ventes et des statistiques qui ne vous identifient pas.</p>
+<h2>4. Ce que nous ne faisons pas</h2>
+<ul><li>Pas de compte, pas de profil, pas de prise de décision automatisée produisant des effets juridiques à votre égard : le score et l’offre suggérée sont de simples indications.</li><li>Pas de publicité, pas de pistage entre applications ou sites (« tracking »), pas de revente de données.</li><li>Pas d’outil de statistiques ni de rapport de plantage tiers dans l’application.</li></ul>
+<h2>5. Transferts hors de l’Union européenne</h2>
+<p>Anthropic et Cloudflare sont établies aux États-Unis : les données transmises pour l’analyse (§ 3.2) peuvent y être traitées. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne, intégrées aux avenants de traitement des données de ces sociétés, et, pour les sociétés certifiées, par le cadre de protection des données UE–États-Unis (Data Privacy Framework).</p>
+<h2>6. Durées de conservation</h2>
+<div class="tbl"><table><tr><th>Données</th><th>Durée</th></tr>
+<tr><td>Inspections sur votre appareil</td><td>Jusqu’à leur suppression par vous ou la désinstallation de l’appli</td></tr>
+<tr><td>Photos et données envoyées à notre serveur</td><td>Le temps de la requête (2 minutes au plus), non enregistrées</td></tr>
+<tr><td>Adresse IP (limitation des abus)</td><td>10 minutes au plus, en mémoire</td></tr>
+<tr><td>Journaux techniques du serveur</td><td>7 jours au plus (sans donnée personnelle)</td></tr>
+<tr><td>Données transmises à Anthropic</td><td>30 jours au plus en règle générale (voir § 3.2)</td></tr></table></div>
+<h2>7. Vos droits</h2>
+<p>Conformément au RGPD et à la loi « Informatique et Libertés », vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité, ainsi que du droit de définir des directives sur le sort de vos données après votre décès.</p>
+<p>Comme nous ne conservons aucune donnée vous concernant sur notre serveur, la plupart de ces droits s’exercent directement dans l’application : consultez ou supprimez une inspection depuis l’historique, ou effacez tout avec « Effacer toutes mes données » (Réglages et confidentialité), ou désinstallez l’application. Pour toute autre demande, écrivez-nous à <strong><a href="mailto:hac.remini+CheckAuto@gmail.com">hac.remini+CheckAuto@gmail.com</a></strong>. Nous répondons dans un délai d’un mois.</p>
+<p>Vous pouvez aussi introduire une réclamation auprès de la <strong>CNIL</strong> (www.cnil.fr, 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07).</p>
+<h2>8. Mineurs</h2>
+<p>CheckAuto s’adresse aux personnes qui achètent un véhicule. Elle n’est pas destinée aux enfants de moins de 15 ans.</p>
+<h2>9. Sécurité</h2>
+<p>Les échanges entre l’application et notre serveur sont chiffrés (HTTPS). Le serveur refuse les fichiers qui ne sont pas des images et limite la taille des envois. Les données de l’application sont protégées par le chiffrement et le cloisonnement d’iOS.</p>
+<h2>10. Modifications</h2>
+<p>Nous pourrons modifier cette politique. La date de mise à jour figure en haut de cette page ; en cas de changement important, l’application vous en informera.</p>
+</main></body></html>
